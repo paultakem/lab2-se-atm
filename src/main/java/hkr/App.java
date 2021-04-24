@@ -18,6 +18,7 @@ public class App extends Application {
     public static Database database;
     public static App app;
     private Stage stage;
+    private Scene atm, login;
 
     static {
         database = new Database();
@@ -31,8 +32,12 @@ public class App extends Application {
     public void start(Stage primaryStage) throws IOException {
         URL url = getClass().getResource("/views/atm.fxml");
         FXMLLoader loader = new FXMLLoader(url);
+        atm = new Scene(loader.load());
+        URL url2 = getClass().getResource("/views/atm.fxml");
+        FXMLLoader loader2 = new FXMLLoader(url);
+        login = new Scene(loader2.load());
 
-        primaryStage.setScene(new Scene(loader.load()));
+        primaryStage.setScene(login);
         primaryStage.initStyle(StageStyle.UTILITY);
         primaryStage.show();
         stage = primaryStage;
