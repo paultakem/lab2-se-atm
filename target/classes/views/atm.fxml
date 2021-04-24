@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hkr.controllers.ATM">
+   <children>
+      <Pane layoutX="170.0" layoutY="40.0" prefHeight="319.0" prefWidth="259.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <JFXButton fx:id="takeBtn" layoutX="161.0" layoutY="240.0" prefHeight="65.0" prefWidth="80.0" styleClass="btn-withdraw" stylesheets="@../css/styles.css" text="TAKE" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="addBtn" layoutX="24.0" layoutY="240.0" prefHeight="65.0" prefWidth="80.0" styleClass="btn-add" stylesheets="@../css/styles.css" text="ADD" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="inputNum" alignment="CENTER" layoutX="41.0" layoutY="137.0" prefHeight="40.0" prefWidth="178.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10;" text="165.34">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </TextField>
+            <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance: " textAlignment="CENTER" wrappingWidth="107.9505615234375">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="balanceOutput" layoutX="137.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1057.34" textAlignment="CENTER" wrappingWidth="107.9505615234375">
+               <font>
+                  <Font name="Bell MT Bold" size="26.0" />
+               </font>
+            </Text>
+            <Text fx:id="errorText" fill="RED" layoutX="33.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot enter negative number" textAlignment="CENTER" wrappingWidth="194.8033447265625" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

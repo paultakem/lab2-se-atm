@@ -1,0 +1,11 @@
+.anchor-pane {
+    -fx-background-color: #0ab500;
+}
+
+.btn-add {
+    -fx-background-color: #007dbf;
+}
+
+.btn-withdraw {
+    -fx-background-color: #ff3838;
+}
