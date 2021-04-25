@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class User implements Cloneable {
+public class User {
 
     private final int id;
     private final String email;

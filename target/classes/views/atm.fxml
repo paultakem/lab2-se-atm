@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hkr.controllers.ATM">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hkr.controllers.ATM">
    <children>
       <Pane layoutX="170.0" layoutY="40.0" prefHeight="319.0" prefWidth="259.0" style="-fx-background-color: white; -fx-background-radius: 15;">
          <children>
@@ -37,7 +37,10 @@
                   <Font name="Bell MT Bold" size="26.0" />
                </font>
             </Text>
-            <Text fx:id="errorText" fill="RED" layoutX="33.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot enter negative number" textAlignment="CENTER" wrappingWidth="194.8033447265625" />
+            <Text fx:id="errorText" fill="RED" layoutX="33.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot enter negative number" textAlignment="CENTER" wrappingWidth="194.8033447265625">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
          </children>
       </Pane>
       <Button fx:id="exit" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" style="-fx-background-radius: 25; -fx-background-color: white;" text="Exit" textAlignment="CENTER">
