@@ -49,8 +49,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,9 +97,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -109,23 +110,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Unnamed">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hkr.Main" />
       <module name="lab2-se-atm" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,6 +148,8 @@
       <updated>1619258392864</updated>
       <workItem from="1619258394988" duration="5678000" />
       <workItem from="1619352705310" duration="746000" />
+      <workItem from="1619357369032" duration="1066000" />
+      <workItem from="1619358466493" duration="318000" />
     </task>
     <servers />
   </component>
@@ -176,12 +166,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="156" y="26" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619353452610">
-      <screen x="0" y="23" width="1280" height="703" />
+    <state x="176" y="116" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619358374256">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="176" y="116" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1619261235870" />
+    <state x="176" y="116" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1619358374256" />
     <state x="156" y="26" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.703@0.23.1280.703" timestamp="1619353452610" />
     <state x="526" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1619259360923">
       <screen x="0" y="0" width="1440" height="920" />
@@ -192,130 +183,49 @@
     </state>
     <state x="451" y="263" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1619261231644" />
     <state x="401" y="224" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.703@0.23.1280.703" timestamp="1619353449464" />
+    <state x="451" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619358340149">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="451" y="208" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.920@0.0.1440.920" timestamp="1619358340149" />
     <state x="501" y="216" key="FileChooserDialogImpl" timestamp="1619261013626">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="501" y="216" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1619261013626" />
-    <state width="1238" height="341" key="GridCell.Tab.0.bottom" timestamp="1619353433971">
-      <screen x="0" y="23" width="1280" height="703" />
-    </state>
-    <state width="1397" height="385" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1619263014935" />
-    <state width="1238" height="341" key="GridCell.Tab.0.bottom/0.23.1280.703@0.23.1280.703" timestamp="1619353433971" />
-    <state width="1238" height="341" key="GridCell.Tab.0.center" timestamp="1619353433970">
-      <screen x="0" y="23" width="1280" height="703" />
-    </state>
-    <state width="1397" height="385" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1619263014935" />
-    <state width="1238" height="341" key="GridCell.Tab.0.center/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
-    <state width="1238" height="341" key="GridCell.Tab.0.left" timestamp="1619353433970">
-      <screen x="0" y="23" width="1280" height="703" />
-    </state>
-    <state width="1397" height="385" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1619263014935" />
-    <state width="1238" height="341" key="GridCell.Tab.0.left/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
-    <state width="1238" height="341" key="GridCell.Tab.0.right" timestamp="1619353433970">
-      <screen x="0" y="23" width="1280" height="703" />
-    </state>
-    <state width="1397" height="385" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1619263014935" />
-    <state width="1238" height="341" key="GridCell.Tab.0.right/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
-    <state x="201" y="35" key="SettingsEditor" timestamp="1619261286798">
+    <state width="1397" height="385" key="GridCell.Tab.0.bottom" timestamp="1619358444130">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1619261286798" />
+    <state width="1397" height="385" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1619358444130" />
+    <state width="1238" height="341" key="GridCell.Tab.0.bottom/0.23.1280.703@0.23.1280.703" timestamp="1619353433971" />
+    <state width="1397" height="385" key="GridCell.Tab.0.center" timestamp="1619358444130">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="385" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1619358444130" />
+    <state width="1238" height="341" key="GridCell.Tab.0.center/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
+    <state width="1397" height="385" key="GridCell.Tab.0.left" timestamp="1619358444130">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="385" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1619358444130" />
+    <state width="1238" height="341" key="GridCell.Tab.0.left/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
+    <state width="1397" height="385" key="GridCell.Tab.0.right" timestamp="1619358444130">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="385" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1619358444130" />
+    <state width="1238" height="341" key="GridCell.Tab.0.right/0.23.1280.703@0.23.1280.703" timestamp="1619353433970" />
+    <state x="201" y="35" key="SettingsEditor" timestamp="1619358105400">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="201" y="35" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1619358105400" />
     <state x="419" y="127" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1619352883476">
       <screen x="0" y="23" width="1280" height="703" />
     </state>
     <state x="419" y="127" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.703@0.23.1280.703" timestamp="1619352883476" />
+    <state x="377" y="211" key="run.anything.popup" timestamp="1619358411507">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="377" y="211" key="run.anything.popup/0.0.1440.920@0.0.1440.920" timestamp="1619358411507" />
     <state x="305" y="50" width="670" height="676" key="search.everywhere.popup" timestamp="1619353343239">
       <screen x="0" y="23" width="1280" height="703" />
     </state>
     <state x="305" y="50" width="670" height="676" key="search.everywhere.popup/0.23.1280.703@0.23.1280.703" timestamp="1619353343239" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>src</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>9</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>lab2-se-atm</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Database {
 
-    private final static String table = "`app_db_1`.`user`";
+    private final static String table = "`app_db`.`user`";
 
     static {
         try{
@@ -27,7 +27,7 @@ public class Database {
 
     public void addAccount(String email, String password) {
         execute(Type.UPDATE,
-                        "INSERT INTO " + table + " (email, password) " +
+                "INSERT INTO " + table + " (email, password) " +
                         "VALUES (?, ?);",
                 new Object[] { email, password },
                 new int[] { Types.VARCHAR, Types.VARCHAR }
@@ -40,7 +40,7 @@ public class Database {
                 new int[] { Types.DECIMAL, Types.VARCHAR }
         );
     }
-    
+
     public User getUser(int id){
         Map<String, ArrayList<Object>> result = (Map<String, ArrayList<Object>>) execute(Type.READER,
                 "SELECT * FROM " + table + " WHERE id = ?;",
@@ -53,7 +53,7 @@ public class Database {
                 (BigDecimal)result.get("balance").get(0)
         );
     }
-    
+
     public int checkCredentials(String email, String password) {
         int id = -1;
 
@@ -167,8 +167,8 @@ public class Database {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/?user=javafx-app-1/app_db_1?&allowMultiQueries=true&serverTimezone=Europe/Stockholm&autoReconnect=true&useSSL=true"
-                    , "javafx-app-1",
+                    "jdbc:mysql://localhost:3306/?user=javafx-app/app_db?&allowMultiQueries=true&serverTimezone=Europe/Stockholm&autoReconnect=true&useSSL=true"
+                    , "javafx-app",
                     "123qwerty123"
             );
         } catch (SQLException ex) {
