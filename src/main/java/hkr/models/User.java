@@ -6,9 +6,9 @@ import java.util.Date;
 
 public class User implements Cloneable {
 
-    private int id;
-    private String email;
-    private BigDecimal balance;
+    private final int id;
+    private final String email;
+    private final BigDecimal balance;
 
     public User(int id, String email, BigDecimal balance){
         this.id = id;

@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Database {
 
-    private final static String user = "`app_db`.`user`";
+    private final static String table = "`app_db_1`.`user`";
 
     static {
         try{
@@ -27,7 +27,7 @@ public class Database {
 
     public void addAccount(String email, String password) {
         execute(Type.UPDATE,
-                        "INSERT INTO " + user + " (email, password) " +
+                        "INSERT INTO " + table + " (email, password) " +
                         "VALUES (?, ?);",
                 new Object[] { email, password },
                 new int[] { Types.VARCHAR, Types.VARCHAR }
@@ -35,7 +35,7 @@ public class Database {
     }
 
     public void updateBalance(int id, double value) {
-        execute(Type.UPDATE, "UPDATE " + user + " SET balance = ? WHERE id = ? ORDER BY id DESC LIMIT 1;",
+        execute(Type.UPDATE, "UPDATE " + table + " SET balance = ? WHERE id = ? ORDER BY id DESC LIMIT 1;",
                 new Object[] { value, id },
                 new int[] { Types.DECIMAL, Types.VARCHAR }
         );
@@ -43,7 +43,7 @@ public class Database {
     
     public User getUser(int id){
         Map<String, ArrayList<Object>> result = (Map<String, ArrayList<Object>>) execute(Type.READER,
-                "SELECT * FROM " + user + " WHERE id = ?;",
+                "SELECT * FROM " + table + " WHERE id = ?;",
                 new Object[] { id },
                 new int[] { Types.INTEGER }
         );
@@ -58,7 +58,7 @@ public class Database {
         int id = -1;
 
         Map<String, ArrayList<Object>> users = (Map<String, ArrayList<Object>>) execute(Type.READER,
-                "SELECT id FROM " + user + " WHERE email = ? AND password = ?;",
+                "SELECT id FROM " + table + " WHERE email = ? AND password = ?;",
                 new Object[] { email, password },
                 new int[] { Types.VARCHAR, Types.VARCHAR }
         );
@@ -98,11 +98,11 @@ public class Database {
     {
         try {
             execute(Type.ONEWAY,
-                    "CREATE TABLE IF NOT EXISTS " + user + " ("+
+                    "CREATE TABLE IF NOT EXISTS " + table + " ("+
                             "`id` INT NOT NULL AUTO_INCREMENT," +
-                            "`email` VARCHAR(128) NOT NULL," +
-                            "`password` VARCHAR(128) NOT NULL," +
-                            "`balance` DECIMAL(15,2) NOT NULL DEFAULT 0," +
+                            "`email` VARCHAR(150) NOT NULL," +
+                            "`password` VARCHAR(150) NOT NULL," +
+                            "`balance` DECIMAL(10,2) NOT NULL DEFAULT 0," +
                             "PRIMARY KEY (`id`));"
             );
         }
@@ -152,6 +152,8 @@ public class Database {
             else if(type == Type.UPDATE){
                 result = command.executeUpdate();
             }
+            else
+                command.execute();
         }
         catch (SQLException ex)
         {
@@ -165,9 +167,9 @@ public class Database {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/?user=javafx-app/app_db?&allowMultiQueries=true&serverTimezone=Europe/Stockholm&autoReconnect=true&useSSL=true"
-                    , "javafx-app",
-                    "123qwert123"
+                    "jdbc:mysql://localhost:3306/?user=javafx-app-1/app_db_1?&allowMultiQueries=true&serverTimezone=Europe/Stockholm&autoReconnect=true&useSSL=true"
+                    , "javafx-app-1",
+                    "123qwerty123"
             );
         } catch (SQLException ex) {
             ex.printStackTrace();
